@@ -14,29 +14,6 @@ public class Libreria {
         this.libros=new ArrayList<>();
     }
 
-    /*private void addLibreria(String g){
-
-        if(this.genero == null){
-            this.genero=g;
-        }else{
-            if(this.genero.compareTo(g)>=1){
-                if(this.izquierda==null){
-                    this.izquierda=new Libreria();
-                    this.izquierda.addLibreria(g);
-                }else{
-                    this.izquierda.addLibreria(g);
-                }
-            }else if(this.genero.compareTo(g)<=-1){
-                if(this.derecha==null){
-                    this.derecha=new Libreria();
-                    this.derecha.addLibreria(g);
-                }else{
-                    this.derecha.addLibreria(g);
-                }
-            }
-        }
-    }*/
-
     public void addLibros(Libro libro){
       Iterator<String> it = libro.getGeneros().iterator();
       while(it.hasNext()){

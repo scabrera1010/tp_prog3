@@ -10,7 +10,7 @@ public class CSVWritter {
         BufferedWriter bw = null;
         
         try {
-            File file = new File("/home/siu-mapuche/TUDAI/Programacion_3/tp_especial/src/libros/salida.csv");
+            File file = new File("src/libros/salida.csv");
             if (!file.exists()) {
                 file.createNewFile();
             }
